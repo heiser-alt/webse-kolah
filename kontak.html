@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logo-sekolah.png" alt="logo sekolah">
+            <h1>SMA NEGERI 1 JAWA BARAT</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">BERANDA</a></li>
+            <li><a href="frofil.html">FROFIL</a></li>
+            <li><a href="guru.html">GURU</a></li>
+            <li><a href="kontak.html">KONTAK</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="kontak">
+            <h2>Hubungi Kami</h2>
+            
+            <form id="formkontak">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Sma Negeri 1 Jawa Barat. Semua Hak Cipta Di Lindungi.</p>
+    </footer>
+    <script>
+        const form = document.getElementById('formkontak');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // cegah kirim form
+            alert("Terim Kasih Pesan Anda telah dikirim.");
+            form.reset();
+        });
+        </script>
+</body>
+</html>
