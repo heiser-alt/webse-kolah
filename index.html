@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pribadi Ebenheiserr</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Ebenheiserr</div>
+    
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="gallery.html">Galeri</a></li>
+      <li><a href="blog.html">Artikel</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO DENGAN FOTO ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hai, Saya <span style="color:#ffd700;">Ebenheiserr</span></h1>
+    <p>Selamat datang di ruang pribadi saya di dunia maya — tempat saya berbagi karya, pengalaman, dan ide.</p>
+  </div>
+</section>
+
+<section id="cuplikan-artikel">
+  <h2>Artikel Terbaru</h2>
+
+  <div class="artikel-card">
+    <img src="foto1.jpg" alt="Artikel 1">
+    <div class="card-content">
+      <h3>Pentingnya Pendidikan di Era Digital</h3>
+      <p>Era digital telah mengubah cara manusia hidup, bekerja, dan belajar....</p>
+      <a href="artikel1.html" class="btn">Baca Selengkapnya</a>
+    </div>
+  </div>
+
+  <div class="artikel-card">
+    <img src="foto2.jpeg" alt="Artikel 2">
+    <div class="card-content">
+      <h3>Membangun Motivasi dari Dalam Diri</h3>
+      <p>Cuplikan artikel 2, beberapa kalimat awal untuk memberikan gambaran isi artikel...</p>
+      <a href="artikel2.html" class="btn">Baca Selengkapnya</a>
+    </div>
+  </div>
+
+  <!-- Tambahkan artikel lainnya seperti sebelumnya -->
+</section>
+
+<main>
+  <h2>Tentang Website Ini</h2>
+  <p>Website ini saya buat sebagai ruang digital untuk menampilkan karya, tulisan, dan proyek pribadi saya. Saya percaya bahwa berbagi pengetahuan dan ide bisa membantu banyak orang di luar sana untuk ikut berkembang.</p>
+  <p>Silakan jelajahi halaman lain seperti <strong>Galeri</strong> untuk melihat foto atau desain saya, dan <strong>Kontak</strong> kalau ingin terhubung lebih dekat.</p>
+</main>
+
+<footer>
+  <p>&copy; 2025 Website Pribadi Saya.</p>
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
